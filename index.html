@@ -43,9 +43,11 @@
             padding: 20px;
             background: #fff;
             margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .main h1 {
             text-align: center;
+            color: #333;
         }
         .section {
             margin-bottom: 20px;
@@ -53,58 +55,44 @@
         .section h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            color: #333;
+        }
+        .section p, .section ul {
+            margin-left: 20px;
+        }
+        .section ul {
+            list-style-type: square;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section h3 {
+            color: #555;
+        }
+        .section ul li:hover {
+            color: #77aaff;
+            cursor: pointer;
+        }
+        .section ul li::before {
+            content: "• ";
+            color: #77aaff;
+        }
+        .section ul li:hover::before {
+            color: #333;
+        }
+        .section ul li:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .section h2:hover {
+            color: #77aaff;
+            cursor: pointer;
+        }
+        .section h2:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Jeremy Allen</h1>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#strengths">Strengths</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <div class="main">
-            <section id="profile" class="section">
-                <h2>Profile</h2>
-                <p>Commercial, Marketing and CCO OD/Talent Management</p>
-                <p>Location: Seattle</p>
-                <p>Time in Dell: 13 years</p>
-            </section>
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <p><strong>Bachelor Degree:</strong> BA, Psychology at University of Washington</p>
-                <p><strong>Development Programs/Extra Leadership Activities:</strong> Dell Aspiring Leader Online Course - 2023, Volunteer for Operation Nightwatch 2014 - 2017</p>
-            </section>
-            <section id="experience" class="section">
-                <h2>Experience</h2>
-                <h3>Positions at Dell</h3>
-                <ul>
-                    <li>Senior Analyst for the UDS WW GBO team. 2017 - Present</li>
-                    <li>GBO Analyst 2013 – 2017: World Wide Enablement lead for UDS on MyQuotes and SFDC and requirements manager for UDS products in MyQuotes. Team lead and mentor for NA sales operations. Developed and delivered successful Sales New Hire program with mentee.</li>
-                    <li>Sales Operations Specialist 2011 – 2013: Supported LATAM and Americas West Region. Provided business insights, drove sales hygiene, and provided operational support for a successful and international sales team.</li>
-                </ul>
-                <h3>Positions Prior to Dell</h3>
-                <ul>
-                    <li>Enterprise Proposal Coordinator – Microsoft/Volt (2009 - 2011): Member of the Sales Excellence team managing the unsolicited proposal service and leading a new ‘voice of the customer’ project team.</li>
-                    <li>Inside Account Manager – Softchoice (2007 - 2009): Supporting NW accounts for IT reseller. Generated $4.5M annual revenue and won multiple awards.</li>
-                    <li>Account Manager – Cavatappi Distribuzione (2005-2007): Outside sales account manager selling to restaurants, wine shops, and grocery stores.</li>
-                </ul>
-            </section>
-            <section id="strengths" class="section">
-                <h2>Strengths</h2>
-                <ul>
-                    <li>Thorough understanding of Dell Storage Sales business processes, tools, and teams with the ability to help resolve complex and unusual challenges.</li>
-                    <li>Strong and energetic communicator with the ability to simplify complex concepts for a broader audience.</li>
-                    <li>Strong project management skills with the ability to collaborate with diverse functions across the organization to achieve a business outcome.</li>
-                </ul>
-            </section>
-        </div>
-    </div>
-</body>
-</html>
